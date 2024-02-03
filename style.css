@@ -1,0 +1,131 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    text-align: center;
+    }
+    
+    body{
+        background-color:rgb(231, 235, 240)
+    }
+    
+    h1{
+        display: flex;
+        position: relative;
+        top: 0;
+        left: 0;
+        align-items: start;
+        max-width: 120px;
+    }
+    
+    main{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    button{
+        height: 9vh;
+        width: 23vw;
+        border-style: solid;
+        border-color: rgb(5, 53, 95);
+        border-radius: 24px;
+        font-size: 3vh;
+    }
+    
+    #encriptar{
+        color: antiquewhite;
+    }
+    
+    #recolector{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 20px;
+        text-align: start;
+        p{
+            text-align: start;
+            font-size: 12px;
+            font-weight: bolder;
+        }
+    }
+    
+    #ingrese-texto{
+        background: round;
+        border:0ch;
+        width: 400px;
+        height: 90%;
+        color: rgb(5, 53, 95);
+    
+    }
+    #ingrese-texto::placeholder{
+        font-size: 30px;
+        color: rgb(5, 53, 95);
+        text-align: start;
+    }
+    
+    #ingrese-texto:focus{
+        outline: none;
+    }
+    
+    #encriptar{
+    background-color: rgb(5, 53, 95);
+    }
+    
+    #show{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        background-color: white;
+        width: 400px;
+        height: 577px;
+        padding: 20px;
+        border-radius: 20px;
+        margin-right: 30px;
+    }
+    
+    #standby{
+    margin-top: 30%;
+    
+    }
+    
+    .Muñeco{
+        width: 200px;
+    }
+    
+    h3{
+        font-style: normal;
+        font-weight: bolder;
+        font-size: 24px;
+    }
+    h4{
+        color: grey;
+        font-size: 16px;
+    }
+
+    @media only screen and (max-width: 600px) {
+
+        main{
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        #recolector, #show{
+            width: 90%;
+            height: 70vh;
+        }
+
+        button{
+            height: 8vh;
+            width: 25vw;
+            font-size: 2vh;
+            border-radius: 3.5vh;
+        }
+        #ingrese-texto::placeholder{
+            font-size: 3vh;
+            text-align: center;
+        }
+
+
+
+    }
